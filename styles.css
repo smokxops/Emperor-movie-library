@@ -1,0 +1,29 @@
+body {
+    font-family: Arial;
+    background: #760404;
+    color: rebeccapurple;
+    text-align: center;
+}
+
+.movie-card {
+    background: goldenrod;
+    padding: 17px;
+    margin: 17px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 270px;
+}
+
+.action {
+    border: 3px solid plum;
+}
+
+.comedy {
+    border: 3px solid peachpuff;
+}
+
+img {
+    width: 100%;
+    border-radius: 12px;
+}
+
