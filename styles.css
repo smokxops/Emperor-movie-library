@@ -7,23 +7,24 @@ body {
 
 .movie-card {
     background: goldenrod;
-    padding: 17px;
-    margin: 17px;
-    border-radius: 12px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
     display: inline-block;
-    width: 270px;
+    width: 250px;
 }
 
 .action {
-    border: 3px solid plum;
+    border: 2px solid plum;
 }
 
 .comedy {
-    border: 3px solid peachpuff;
+    border: 2px solid peachpuff;
 }
 
 img {
     width: 100%;
     border-radius: 12px;
 }
+
 
