@@ -94,10 +94,7 @@ class Movie {
     }
 }
 
-// ========================================
 // GENRE-SPECIFIC CLASSES (INHERITANCE)
-// ========================================
-
 class ActionMovie extends Movie {
     constructor(title, year, director, plot, poster, imdbRating, runtime, actors, imdbID) {
         super(title, year, director, plot, poster, imdbRating, runtime, actors, imdbID);
@@ -200,9 +197,7 @@ class SciFiMovie extends Movie {
     }
 }
 
-// ========================================
 // REVIEW CLASS
-// ========================================
 class Review {
     constructor(author, text, rating) {
         this.author = author;
@@ -229,9 +224,7 @@ class Review {
     }
 }
 
-// ========================================
 // USER CLASS
-// ========================================
 class User {
     // Private field for collection
     #movieCollection;
