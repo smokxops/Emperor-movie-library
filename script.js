@@ -414,28 +414,6 @@ function showNotification(message) {
     }, 3000);
 }
 
-// API KEY SETUP HELPER
-function setupAPIKey() {
-    console.log(`
-    ========================================
-    🎬 OMDB API KEY SETUP
-    ========================================
-    
-    To use the movie search feature:
-    
-    1. Get a FREE API key at: http://www.omdbapi.com/apikey.aspx
-    2. Open movie-app.js
-    3. Find line: omdbService = new OMDBService('YOUR_API_KEY_HERE');
-    4. Replace 'YOUR_API_KEY_HERE' with your actual API key
-    5. Save and reload the page
-    
-    Example:
-    omdbService = new OMDBService('abc12345');
-    
-    ========================================
-    `);
-}
-
 // Show API setup instructions on load
 setupAPIKey();
 
@@ -465,5 +443,6 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
 
 
