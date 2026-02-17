@@ -173,7 +173,7 @@ function renderCollection() {
     // Apply genre filter
     if (currentFilter !== 'all') {
         movies = movies.filter(movie => 
-            movie.getGenre().toLowerCase() === currentFilter.toLowerCase()
+            movie.getGenre().toLowerCase().includes(currentFilter.toLowerCase())
         );
     }
     
@@ -465,3 +465,4 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
