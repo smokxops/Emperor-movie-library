@@ -241,7 +241,7 @@ function rateMovie(rating) {
 }
 
 function updateStarRating(rating) {
-    const stars = document.querySelectorAll('.star');
+    const stars = document.querySelectorAll('#movieModal .star');
     stars.forEach((star, index) => {
         if (index < rating) {
             star.classList.add('active');
@@ -465,4 +465,5 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
 
