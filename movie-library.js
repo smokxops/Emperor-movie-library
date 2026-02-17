@@ -371,7 +371,7 @@ class OMDBService {
     #apiKey;
     #baseURL;
 
-    constructor(apiKey = 'YOUR_API_KEY_HERE') { // Replace with actual key
+    constructor(apiKey = '83fcc659') { // Replace with actual key
         this.#apiKey = apiKey;
         this.#baseURL = 'https://www.omdbapi.com/';
     }
