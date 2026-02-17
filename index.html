@@ -1,15 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emperor Movie Collection</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cinzel:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emperor Cine Movie Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cinzel:wght@400;700&family=Raleway:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Art Deco Background Elements -->
     <div class="deco-pattern"></div>
     <div class="spotlight spotlight-1"></div>
@@ -17,199 +20,259 @@
 
     <!-- Header -->
     <header class="cinema-header">
-        <div class="marquee-lights"></div>
-        <h1 class="cinema-title">
-            <span class="title-line">CINE</span>
-            <span class="title-line gold">VAULT</span>
-        </h1>
-        <p class="cinema-tagline">EMPEROR CINE MOVIE COLLECTION</p>
-        <div class="marquee-lights bottom"></div>
+      <div class="marquee-lights"></div>
+      <h1 class="cinema-title">
+        <span class="title-line">CINE</span>
+        <span class="title-line gold">VAULT</span>
+      </h1>
+      <p class="cinema-tagline">EMPEROR CINE MOVIE COLLECTION</p>
+      <div class="marquee-lights bottom"></div>
     </header>
 
     <!-- User Profile Section -->
     <section class="user-section">
-        <div class="container">
-            <div class="user-card">
-                <div class="user-avatar">
-                    <span id="userInitials">MV</span>
-                </div>
-                <div class="user-info">
-                    <h2 id="userName">Movie Lover</h2>
-                    <p class="user-stats">
-                        <span id="movieCount">0</span> Films | 
-                        <span id="reviewCount">0</span> Reviews
-                    </p>
-                </div>
-                <button class="edit-profile-btn" onclick="editProfile()">✎</button>
-            </div>
+      <div class="container">
+        <div class="user-card">
+          <div class="user-avatar">
+            <span id="userInitials">MV</span>
+          </div>
+          <div class="user-info">
+            <h2 id="userName">Movie Lover</h2>
+            <p class="user-stats">
+              <span id="movieCount">0</span> Films |
+              <span id="reviewCount">0</span> Reviews
+            </p>
+          </div>
+          <button class="edit-profile-btn" onclick="editProfile()">✎</button>
         </div>
+      </div>
     </section>
 
     <!-- Search & Add Section -->
     <section class="search-section">
-        <div class="container">
-            <div class="search-card">
-                <div class="search-header">
-                    <h2 class="section-title">DISCOVER CINEMA</h2>
-                </div>
-                
-                <div class="search-controls">
-                    <div class="search-input-wrapper">
-                        <input 
-                            type="text" 
-                            id="movieSearch" 
-                            placeholder="Search for a movie..."
-                            class="search-input"
-                        >
-                        <button class="search-btn" onclick="searchMovie()">
-                            <span class="btn-text">SEARCH</span>
-                        </button>
-                    </div>
+      <div class="container">
+        <div class="search-card">
+          <div class="search-header">
+            <h2 class="section-title">DISCOVER CINEMA</h2>
+          </div>
 
-                    <div class="genre-tabs">
-                        <button class="genre-tab active" data-genre="all" onclick="filterByGenre('all')">ALL</button>
-                        <button class="genre-tab" data-genre="action" onclick="filterByGenre('action')">ACTION</button>
-                        <button class="genre-tab" data-genre="comedy" onclick="filterByGenre('comedy')">COMEDY</button>
-                        <button class="genre-tab" data-genre="drama" onclick="filterByGenre('drama')">DRAMA</button>
-                        <button class="genre-tab" data-genre="horror" onclick="filterByGenre('horror')">HORROR</button>
-                        <button class="genre-tab" data-genre="scifi" onclick="filterByGenre('scifi')">SCI-FI</button>
-                    </div>
-                </div>
-
-                <div id="searchResults" class="search-results hidden"></div>
+          <div class="search-controls">
+            <div class="search-input-wrapper">
+              <input
+                type="text"
+                id="movieSearch"
+                placeholder="Search for a movie..."
+                class="search-input"
+              />
+              <button class="search-btn" onclick="searchMovie()">
+                <span class="btn-text">SEARCH</span>
+              </button>
             </div>
+
+            <div class="genre-tabs">
+              <button
+                class="genre-tab active"
+                data-genre="all"
+                onclick="filterByGenre('all')"
+              >
+                ALL
+              </button>
+              <button
+                class="genre-tab"
+                data-genre="action"
+                onclick="filterByGenre('action')"
+              >
+                ACTION
+              </button>
+              <button
+                class="genre-tab"
+                data-genre="comedy"
+                onclick="filterByGenre('comedy')"
+              >
+                COMEDY
+              </button>
+              <button
+                class="genre-tab"
+                data-genre="drama"
+                onclick="filterByGenre('drama')"
+              >
+                DRAMA
+              </button>
+              <button
+                class="genre-tab"
+                data-genre="horror"
+                onclick="filterByGenre('horror')"
+              >
+                HORROR
+              </button>
+              <button
+                class="genre-tab"
+                data-genre="sci-fi"
+                onclick="filterByGenre('sci-fi')"
+              >
+                SCI-FI
+              </button>
+            </div>
+          </div>
+
+          <div id="searchResults" class="search-results hidden"></div>
         </div>
+      </div>
     </section>
 
     <!-- Movie Collection -->
     <section class="collection-section">
-        <div class="container">
-            <div class="collection-header">
-                <h2 class="section-title">MY COLLECTION</h2>
-                <div class="view-toggle">
-                    <button class="toggle-btn active" data-view="grid" onclick="toggleView('grid')">
-                        <span>⊞</span> GRID
-                    </button>
-                    <button class="toggle-btn" data-view="list" onclick="toggleView('list')">
-                        <span>☰</span> LIST
-                    </button>
-                </div>
-            </div>
-
-            <div id="movieCollection" class="movie-grid">
-                <div class="empty-state">
-                    <div class="empty-icon">🎬</div>
-                    <h3>Your Collection is Empty for now Dawg</h3>
-                    <p>Start building your personal cinema by searching for movies above</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="collection-header">
+          <h2 class="section-title">MY COLLECTION</h2>
+          <div class="view-toggle">
+            <button
+              class="toggle-btn active"
+              data-view="grid"
+              onclick="toggleView('grid')"
+            >
+              <span>⊞</span> GRID
+            </button>
+            <button
+              class="toggle-btn"
+              data-view="list"
+              onclick="toggleView('list')"
+            >
+              <span>☰</span> LIST
+            </button>
+          </div>
         </div>
+
+        <div id="movieCollection" class="movie-grid">
+          <div class="empty-state">
+            <div class="empty-icon">🎬</div>
+            <h3>Your Collection is Empty for now Dawg</h3>
+            <p>
+              Start building your personal cinema by searching for movies above
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Movie Detail Modal -->
     <div id="movieModal" class="modal hidden">
-        <div class="modal-overlay" onclick="closeModal()"></div>
-        <div class="modal-content">
-            <button class="modal-close" onclick="closeModal()">✕</button>
-            
-            <div class="modal-body">
-                <div class="modal-poster">
-                    <img id="modalPoster" src="" alt="Movie Poster">
-                    <div class="modal-genre-badge" id="modalGenreBadge"></div>
-                </div>
+      <div class="modal-overlay" onclick="closeModal()"></div>
+      <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">✕</button>
 
-                <div class="modal-info">
-                    <h2 id="modalTitle" class="modal-title"></h2>
-                    <p id="modalYear" class="modal-year"></p>
-                    
-                    <div class="modal-meta">
-                        <span class="meta-item">
-                            <strong>Director:</strong> <span id="modalDirector"></span>
-                        </span>
-                        <span class="meta-item">
-                            <strong>Cast:</strong> <span id="modalCast"></span>
-                        </span>
-                        <span class="meta-item">
-                            <strong>Runtime:</strong> <span id="modalRuntime"></span>
-                        </span>
-                        <span class="meta-item">
-                            <strong>IMDB:</strong> <span id="modalRating"></span> ⭐
-                        </span>
-                    </div>
+        <div class="modal-body">
+          <div class="modal-poster">
+            <img id="modalPoster" src="" alt="Movie Poster" />
+            <div class="modal-genre-badge" id="modalGenreBadge"></div>
+          </div>
 
-                    <p id="modalPlot" class="modal-plot"></p>
+          <div class="modal-info">
+            <h2 id="modalTitle" class="modal-title"></h2>
+            <p id="modalYear" class="modal-year"></p>
 
-                    <!-- User Rating -->
-                    <div class="user-rating-section">
-                        <h3>Your Rating</h3>
-                        <div class="star-rating">
-                            <span class="star" data-rating="1" onclick="rateMovie(1)">☆</span>
-                            <span class="star" data-rating="2" onclick="rateMovie(2)">☆</span>
-                            <span class="star" data-rating="3" onclick="rateMovie(3)">☆</span>
-                            <span class="star" data-rating="4" onclick="rateMovie(4)">☆</span>
-                            <span class="star" data-rating="5" onclick="rateMovie(5)">☆</span>
-                        </div>
-                    </div>
-
-                    <!-- Reviews -->
-                    <div class="reviews-section">
-                        <h3>Your Reviews</h3>
-                        <div id="reviewsList" class="reviews-list"></div>
-                        
-                        <div class="add-review">
-                            <textarea 
-                                id="reviewText" 
-                                placeholder="Write your review..."
-                                class="review-input"
-                            ></textarea>
-                            <button class="add-review-btn" onclick="addReview()">
-                                POST REVIEW
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="modal-actions">
-                        <button class="remove-btn" onclick="removeFromCollection()">
-                            REMOVE FROM COLLECTION
-                        </button>
-                    </div>
-                </div>
+            <div class="modal-meta">
+              <span class="meta-item">
+                <strong>Director:</strong> <span id="modalDirector"></span>
+              </span>
+              <span class="meta-item">
+                <strong>Cast:</strong> <span id="modalCast"></span>
+              </span>
+              <span class="meta-item">
+                <strong>Runtime:</strong> <span id="modalRuntime"></span>
+              </span>
+              <span class="meta-item">
+                <strong>IMDB:</strong> <span id="modalRating"></span> ⭐
+              </span>
             </div>
+
+            <p id="modalPlot" class="modal-plot"></p>
+
+            <!-- User Rating -->
+            <div class="user-rating-section">
+              <h3>Your Rating</h3>
+              <div class="star-rating">
+                <span class="star" data-rating="1" onclick="rateMovie(1)"
+                  >☆</span
+                >
+                <span class="star" data-rating="2" onclick="rateMovie(2)"
+                  >☆</span
+                >
+                <span class="star" data-rating="3" onclick="rateMovie(3)"
+                  >☆</span
+                >
+                <span class="star" data-rating="4" onclick="rateMovie(4)"
+                  >☆</span
+                >
+                <span class="star" data-rating="5" onclick="rateMovie(5)"
+                  >☆</span
+                >
+              </div>
+            </div>
+
+            <!-- Reviews -->
+            <div class="reviews-section">
+              <h3>Your Reviews</h3>
+              <div id="reviewsList" class="reviews-list"></div>
+
+              <div class="add-review">
+                <textarea
+                  id="reviewText"
+                  placeholder="Write your review..."
+                  class="review-input"
+                ></textarea>
+                <button class="add-review-btn" onclick="addReview()">
+                  POST REVIEW
+                </button>
+              </div>
+            </div>
+
+            <div class="modal-actions">
+              <button class="remove-btn" onclick="removeFromCollection()">
+                REMOVE FROM COLLECTION
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Edit Profile Modal -->
     <div id="profileModal" class="modal hidden">
-        <div class="modal-overlay" onclick="closeProfileModal()"></div>
-        <div class="modal-content small">
-            <button class="modal-close" onclick="closeProfileModal()">✕</button>
-            
-            <div class="modal-body">
-                <h2 class="modal-title">Edit Profile</h2>
-                
-                <div class="form-group">
-                    <label>Your Name</label>
-                    <input type="text" id="profileName" class="form-input" placeholder="Enter your name">
-                </div>
+      <div class="modal-overlay" onclick="closeProfileModal()"></div>
+      <div class="modal-content small">
+        <button class="modal-close" onclick="closeProfileModal()">✕</button>
 
-                <button class="save-profile-btn" onclick="saveProfile()">
-                    SAVE CHANGES
-                </button>
-            </div>
+        <div class="modal-body">
+          <h2 class="modal-title">Edit Profile</h2>
+
+          <div class="form-group">
+            <label>Your Name</label>
+            <input
+              type="text"
+              id="profileName"
+              class="form-input"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <button class="save-profile-btn" onclick="saveProfile()">
+            SAVE CHANGES
+          </button>
         </div>
+      </div>
     </div>
 
     <!-- Loading Indicator -->
     <div id="loadingIndicator" class="loading-indicator hidden">
-        <div class="film-reel">
-            <div class="reel"></div>
-            <div class="reel"></div>
-        </div>
-        <p>Loading...</p>
+      <div class="film-reel">
+        <div class="reel"></div>
+        <div class="reel"></div>
+      </div>
+      <p>Loading...</p>
     </div>
 
     <script src="movie-library.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-
