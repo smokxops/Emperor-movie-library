@@ -23,4 +23,5 @@ Built With
 
 Developer
 
-Smokxops Charly
+Smokxops
+

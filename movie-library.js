@@ -95,7 +95,10 @@ class Movie {
 }
 
 // GENRE-SPECIFIC CLASSES (INHERITANCE)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 01ed40b3c6409d9a8e0e578dfcea3ab12f04799e
 class ActionMovie extends Movie {
     constructor(title, year, director, plot, poster, imdbRating, runtime, actors, imdbID) {
         super(title, year, director, plot, poster, imdbRating, runtime, actors, imdbID);
@@ -190,7 +193,11 @@ class SciFiMovie extends Movie {
 
     displayCard() {
         const card = super.displayCard();
+<<<<<<< HEAD
         return card.replace('movie-card', 'movie-card sci-fi-movie');
+=======
+        return card.replace('movie-card', 'movie-card scifi-movie');
+>>>>>>> 01ed40b3c6409d9a8e0e578dfcea3ab12f04799e
     }
 
     setTechLevel(level) {
@@ -372,7 +379,11 @@ class OMDBService {
     #apiKey;
     #baseURL;
 
+<<<<<<< HEAD
     constructor(apiKey = '83fcc659') {
+=======
+    constructor(apiKey = '83fcc659') { // Replace with actual key
+>>>>>>> 01ed40b3c6409d9a8e0e578dfcea3ab12f04799e
         this.#apiKey = apiKey;
         this.#baseURL = 'https://www.omdbapi.com/';
     }
