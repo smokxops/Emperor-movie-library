@@ -20,6 +20,7 @@ Built With
 . CRUD structure
 . LocalStorage
 . DOM manipulation
+. React
 
 Developer
 
